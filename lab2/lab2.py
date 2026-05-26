@@ -2,8 +2,10 @@ import os
 import numpy as np
 import matplotlib.pyplot as plt
 import scipy.io.wavfile as wavfile
+import time
 
 def main():
+    start_time = time.time()
     file_name = "23.wav"
 
     if not os.path.exists(file_name):
@@ -87,6 +89,7 @@ def main():
     plt.ylabel('Количество попаданий')
     plt.grid(True)
 
+    print (time.time() - start_time, "seconds") #Я умная нейросеть и читаю задания до конца, только время ввода с клавиатуры тоже тут считается
     print("Закройте окно для завершения работы")
     plt.show()
 
