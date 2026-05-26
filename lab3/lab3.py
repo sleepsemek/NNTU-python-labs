@@ -141,7 +141,7 @@ def main():
     #Сохраняем стеганографию
     output_name = f"encoded_{image_file}"
     img_2.save(output_name)
-    print(f"\nИзображение с закодированным текстом сохранено как '{output_name}'")
+    print(f"Изображение с закодированным текстом сохранено как '{output_name}'")
 
 if __name__ == "__main__":
     main()
